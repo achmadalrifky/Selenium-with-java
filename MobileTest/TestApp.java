@@ -29,10 +29,6 @@ public class TestApp {
 
         appiumDriver = new AppiumDriver(remoteURl, desiredCapabilities);
 
-        // locator elements
-        //WebElement BtnCancel = appiumDriver.findElement(By.id("com.android.permissioncontroller:id/cancel_button"));
-        //BtnCancel.click();
-
         WebElement BtnLanjut = appiumDriver.findElement(By.id("com.android.permissioncontroller:id/continue_button"));
         BtnLanjut.click();
 
@@ -49,12 +45,6 @@ public class TestApp {
 
         WebElement KolomUserName = appiumDriver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.EditText[1]"));
         KolomUserName.sendKeys("Test");
-
-
-
-
-
-
 
     }
 }
